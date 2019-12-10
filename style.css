@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+.grid-container{
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "sidebar-i main sidebar-d"
+        "footersmall footerlarge footerlarge";
+    justify-items: stretch;
+    align-items: stretch;
+    padding: 10px;
+    margin: 8px;
+}
+
+.item{
+    padding: 0 10px;
+}
+
+.header-item{
+    grid-area: header;
+    border-bottom: 2px solid black;
+}
+
+.side-item-i{
+    grid-area: sidebar-i;
+    border: 1px solid black;
+}
+
+.main-item{
+    grid-area: main;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.side-item-d{
+    grid-area: sidebar-d;
+    border: 1px solid black;
+}
+
+.footer-item-small{
+    grid-area: footersmall;
+    border: 1px solid black;
+}
+
+.footer-item-large{
+    grid-area: footerlarge;
+    border: 1px solid black;
+    border-left: 0px;
+    padding: 0;
+}
+
+.main-title{
+    font-family: "Snell Roundhand";
+    font-weight: normal;
+    font-size: 60px;
+    text-align: center;
+}
+
+.medium-title{
+    margin: 30px 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px
+}
+
+p{
+    text-align: left;
+    line-height: 1.5;
+    font-size: 18px
+}
+
+img{
+    width: 100%;
+}
+
+.navigation-container{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    height:100%;
+    padding: 0;
+    margin: 0;
+}
+.navigation-item{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation-item a{
+    text-decoration: none;
+    color: #555;
+}
+
+.navigation-item a:hover{
+    text-decoration: underline;
+}
+
+.navigation-item:nth-child(1){ background-color: #ffeaa7}
+.navigation-item:nth-child(2){ background-color: #81ecec}
+.navigation-item:nth-child(3){ background-color: #55efc4}
+.navigation-item:nth-child(4){ background-color: #74b9ff}
+.navigation-item:nth-child(5){ background-color: #a29bfe}
+
+
